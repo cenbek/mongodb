@@ -1,0 +1,35 @@
+<h1>Teams#index</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Şehir</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @team.each do |t| %>
+  <tr>
+    <td><%= t.name %></td>
+    <td><%= t.city %></td>
+    <td> <%= link_to "Göster", t %> </td>
+    <td> <%= link_to "Düzenle", edit_team_path(t) %> </td>
+    <td> <%= link_to "Sil", t, method: :delete, data:{confirm:'Emni misiniz?'} %> </td>
+    
+    
+    
+    
+    
+    <td></td>
+	
+	
+	
+	
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "Yeni Kayıt", new_team_path %>

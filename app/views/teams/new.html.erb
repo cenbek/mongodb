@@ -1,0 +1,25 @@
+<h1>New Team Record</h1>
+<p>
+
+<%= form_for(@team) do |f| %>
+	
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	
+	<div>
+		<%= f.label :city %>
+		<%= f.text_field :city %>
+	</div>
+	
+	<div>
+		<%= f.submit %>
+		
+	</div>
+
+
+<% end %>
+</p>
+<br/>
+<%= link_to "Geri Dön", teams_path %>

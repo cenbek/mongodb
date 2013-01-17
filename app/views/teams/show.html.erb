@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teams</h1>
+<div>
+
+	<p>
+		<b>Name:</b>
+		<%= @team.name %>
+	</p>
+		<p>
+		<b>City:</b>
+		<%= @team.city %>
+	</p>
+</div>
+
+<%= link_to "Düzenle",edit_team_path %>
+<%= link_to "Liste", teams_path %>
